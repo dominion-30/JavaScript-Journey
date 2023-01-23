@@ -111,27 +111,37 @@ else{
 //     alert("The boy did not honour the appointment");
 // }
 
-let firstname, middlename, surname;
-firstname = prompt("What is your Firstname", "Enter Firstname");
-middlename = prompt("What is your Middlename", "Enter Middlename");
-surname = prompt("What is your Surname", "Enter Surname");
-let age = prompt("How old are you?", "Enter age");
+// let firstname, middlename, surname;
+// firstname = prompt("What is your Firstname", "Enter Firstname");
+// middlename = prompt("What is your Middlename", "Enter Middlename");
+// surname = prompt("What is your Surname", "Enter Surname");
+// let age = prompt("How old are you?", "Enter age");
 
-if (+age >= 1 && +age <=12){
-alert("You are regarded as a child");
-alert(`${firstname + ' ' + middlename + ' ' + surname} your profile cannot be created`);
+// if (+age >= 1 && +age <=12){
+// alert("You are regarded as a child");
+// alert(`${firstname + ' ' + middlename + ' ' + surname} your profile cannot be created`);
+// }
+
+// else if (+age >=13 && +age <=19){
+//     alert("You are regarded as a teenager");
+//     alert(`${firstname} ${middlename} ${surname} your profile has been created but you require confirmation from your guardian or parent`);
+//     let user_address = prompt("What is your address", "Enter Address");
+//     let confired_address = confirm(user_address);
+//     alert(confired_address);
+
+// }
+
+// else{
+//     alert("Your are an adult");
+//     alert(`${firstname + " " + middlename + " " + surname} your profile has been fully created, welcome aboard`);
+// }
+
+let age = prompt("How old are you?", "Enter age" );
+if(+age !=14 && +age >14 && +age <=90){
+    // alert("Access granted");
+    alert("Access denied");
 }
-
-else if (+age >=13 && +age <=19){
-    alert("You are regarded as a teenager");
-    alert(`${firstname} ${middlename} ${surname} your profile has been created but you require confirmation from your guardian or parent`);
-    let user_address = prompt("What is your address", "Enter Address");
-    let confired_address = confirm(user_address);
-    alert(confired_address);
-
-}
-
 else{
-    alert("Your are an adult");
-    alert(`${firstname + " " + middlename + " " + surname} your profile has been fully created, welcome aboard`);
+    // alert("Access denied");
+    alert("Access granted");
 }
