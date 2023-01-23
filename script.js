@@ -136,12 +136,36 @@ else{
 //     alert(`${firstname + " " + middlename + " " + surname} your profile has been fully created, welcome aboard`);
 // }
 
-let age = prompt("How old are you?", "Enter age" );
-if(+age !=14 && +age >14 && +age <=90){
-    // alert("Access granted");
-    alert("Access denied");
+// let age = prompt("How old are you?", "Enter age" );
+// if(+age !=14 && +age >14 && +age <=90){
+//     // alert("Access granted");
+//     alert("Access denied");
+// }
+// else{
+//     // alert("Access denied");
+//     alert("Access granted");
+// }
+
+// if(-1 || 0){
+//     alert("first");
+// }
+
+let password;
+let user = prompt("Enter Username", "Username");
+
+if(user == "Admin"){
+    password = prompt("Enter password!", "password");
+    if(password == "SuperCoder"){
+        alert("Welcome Boss");
+    }
+    else{
+        alert("Access Denied!!!");
+        alert("You have been logged out");
+    }
+}
+else if(user == null){
+    alert("Canceled");
 }
 else{
-    // alert("Access denied");
-    alert("Access granted");
+alert("I don't know you");
 }
