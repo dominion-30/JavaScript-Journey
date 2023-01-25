@@ -150,22 +150,190 @@ else{
 //     alert("first");
 // }
 
-let password;
-let user = prompt("Enter Username", "Username");
+// let password;
+// let user = prompt("Enter Username", "Username");
 
-if(user == "Admin"){
-    password = prompt("Enter password!", "password");
-    if(password == "SuperCoder"){
-        alert("Welcome Boss");
-    }
-    else{
-        alert("Access Denied!!!");
-        alert("You have been logged out");
-    }
-}
-else if(user == null){
-    alert("Canceled");
-}
-else{
-alert("I don't know you");
-}
+// if(user == "Admin"){
+//     password = prompt("Enter password!", "password");
+//     if(password == "SuperCoder"){
+//         alert("Welcome Boss");
+//     }
+//     else{
+//         alert("Access Denied!!!");
+//         alert("You have been logged out");
+//     }
+// }
+// else if(user == null){
+//     alert("Canceled");
+// }
+// else{
+// alert("I don't know you");
+// }
+
+// let result = (+a + +b > 4) ? "Below" : "Over";
+// // alert(result);
+
+// // if(0||0){
+// //     alert("Yes");
+// // }
+// // else{
+// //     alert("No");
+// // }
+
+// // let firstName = "";
+// // let lastName = "";
+// // let nickName = "SuperCoder";
+
+// // alert(firstName || lastName || nickName || "Anonymous");
+
+// // let hour = prompt("What hour is it now,", "hour");
+// // let minute = prompt("What minute pass the hour is it", "minute");
+
+// // if(hour == 12 && minute == 30){
+// //     alert(`The time is ${hour + ":" + minute}`);
+// // }
+
+// // else{
+// //     alert("try again");
+// // }
+
+// // alert(null || 2 || undefined);
+
+// // alert(alert(1) || 2 ||  alert(3));
+
+// // alert(1 && null && 3);
+
+// // alert(alert(1) && alert(2));
+
+// // alert(null || 2 && 3|| 4);
+
+// // let age = prompt("How old are you?", "Enter age" );
+// // if(+age !=14 && +age >14 && +age <=90){
+// //     // alert("Access granted");
+// //     alert("Access denied");
+// // }
+// // else{
+// //     // alert("Access denied");
+// //     alert("Access granted");
+// // }
+// // if(null || -1 && 1){
+// //     alert("third");
+// // }
+// // let password;
+// // let user = prompt("Enter Username", "Username");
+
+// // if(user == "Admin"){
+// //     password = prompt("Enter password!", "password");
+// //     if(password == "SuperCoder"){
+// //         alert("Welcome Boss");
+// //     }
+// //     else{
+// //         alert("Access Denied!!!");
+// //         alert("You have been logged out");
+// //     }
+// // }
+// // else if(user == null){
+// //     alert("Canceled");
+// // }
+// // else{
+// // alert("I don't know you");
+// // }
+// // let i = 0;
+// // while(i <= 3){
+// //     alert(i);
+// //     i++;
+// // }
+
+
+// // let number = 1;
+// // let i = 0;
+// // do{
+// //     alert(`Number ${number}`);
+// //     i++;
+// //     number++;
+// // }
+// // while(i < 3)
+
+// // let i = 0;
+// // do{
+// //     alert(i);
+// //     i++;
+// // }while(i<3)
+
+// // let number = 1;
+// // for(let i = 0;i < 3; i++){
+// //     alert(`Number ${number}`);
+// //     number++;
+// // }
+
+// // let number = 1;
+// // for(let i = 0; i < 3; i++){
+// //     alert(`Number ${number}`);
+// //     number++;
+// // }
+
+// // let num = 1;
+
+// // for(num = 1; num <=10; num++){
+// //     alert(num);
+// // }
+// // alert(num);
+
+// // let i = 0;
+// // let n;
+// // for(; i < 3; i ++){
+// //     n = i + 1;
+// //     alert(`Number ${n}`);
+// // }
+
+
+// // let i = 0;
+
+// // for(; i < 3;){
+// //     alert(i++);
+
+
+// // let sum = 0;
+// // while(true){
+// //     let value = +prompt("Enter value", "Input should be a number");
+
+// //     if(!value){
+// //         break;
+// //     }
+    
+// //     sum = sum + value;
+
+
+// // }
+// // alert("sum:" + sum);
+// // alert(Number("Abiola"));
+
+// // let sum = 0
+// // while(true){
+// //     let value = +prompt("Enter a number", "Input must be data type Number");
+
+// //     if(!value){
+// //         break;
+// //     }
+// //     sum = sum + value;
+// // }
+// // alert("Sum:" + sum);
+
+// // let i = 0;
+// // for(; i < 10; i++){
+// //     if (i%2 == 0){
+// //         continue;
+// //     }
+// //     alert(i);
+// // }
+
+
+// // let i = 0;
+// // for(; i < 10; i++){
+// //     if(i% 2){
+// //         alert(i);
+// //     }
+// // }
+
+// let i = 2;
+// alert(i % 2);
