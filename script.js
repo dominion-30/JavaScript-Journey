@@ -340,23 +340,44 @@
 
 
 
-let browser = true;
-while(true){
-    let user_string = prompt("Enter the name of your browser", "Browser");
+// let browser = true;
+// while(true){
+//     let user_string = prompt("Enter the name of your browser", "Browser");
     
-    if(user_string == "Edge"){
+//     if(user_string == "Edge"){
 
-        alert("You've got the Edge!");
+//         alert("You've got the Edge!");
+//         break;
+//     }
+
+//     else if(user_string == "chrome" || user_string == "opera" || user_string == "firefox" || user_string == "safari"){
+//         alert("Okay we support these browsers too");
+//         break
+//     }
+
+//     else{
+//         alert("We hope this page looks okay on your browser");
+//         break
+//     }
+// }
+
+
+let a = +prompt("Enter a number", "Input should be a number");
+
+switch(a){
+    case 0:
+        alert(0);
         break;
-    }
-
-    else if(user_string == "chrome" || user_string == "opera" || user_string == "firefox" || user_string == "safari"){
-        alert("Okay we support these browsers too");
-        break
-    }
-
-    else{
-        alert("We hope this page looks okay on your browser");
-        break
-    }
+    case 1:
+        alert(1);
+        break;
+    case 2:
+    case 3:
+        alert(`${2} or ${3}`);
+        break;
+    default:
+        alert("Number not allowed");
 }
+
+
+
