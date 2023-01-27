@@ -362,22 +362,41 @@
 // }
 
 
-let a = +prompt("Enter a number", "Input should be a number");
+// let a = +prompt("Enter a number", "Input should be a number");
 
-switch(a){
-    case 0:
-        alert(0);
-        break;
-    case 1:
-        alert(1);
-        break;
-    case 2:
-    case 3:
-        alert(`${2} or ${3}`);
-        break;
-    default:
-        alert("Number not allowed");
+// switch(a){
+//     case 0:
+//         alert(0);
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//     case 3:
+//         alert(`${2} or ${3}`);
+//         break;
+//     default:
+//         alert("Number not allowed");
+// }
+
+
+
+//Functions
+
+
+// function showMessage(){
+//     alert("Hello World!");
+// }
+
+// showMessage();
+// showMessage();
+// showMessage();
+
+function greetings(){
+    let message = "Good day, hope you are having a great day";
+    alert(message);
+
 }
 
-
-
+greetings();
+greetings();
