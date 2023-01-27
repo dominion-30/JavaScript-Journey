@@ -392,11 +392,26 @@
 // showMessage();
 // showMessage();
 
-function greetings(){
-    let message = "Good day, hope you are having a great day";
+// function greetings(){
+//     let message = "Good day " + userName;
+//     alert(message);
+
+// }
+
+// let userName = "John";
+
+// greetings();
+// greetings();
+// alert(message);
+
+let userName = "John";
+
+function showMessage(){
+    let userName = "Bob";
+    let message = "Hello " + userName;
     alert(message);
-
 }
-
-greetings();
-greetings();
+alert(userName);
+showMessage();
+showMessage();
+alert(userName);
