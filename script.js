@@ -1,13 +1,13 @@
 // Program to get a number from the user that is between 1 and 10
 
-let user_num = prompt("Enter number from 1 - 10", "Enter number");
+// let user_num = prompt("Enter number from 1 - 10", "Enter number");
 
-if (user_num >= 1 && user_num <=10){
-    alert("Bravo, you are right");
-}
-else{
-    alert("How could you be so wrong");
-}
+// if (user_num >= 1 && user_num <=10){
+//     alert("Bravo, you are right");
+// }
+// else{
+//     alert("How could you be so wrong");
+// }
 
 // // let counter = 2;
 // // alert(counter);
@@ -337,3 +337,26 @@ else{
 
 // let i = 2;
 // alert(i % 2);
+
+
+
+let browser = true;
+while(true){
+    let user_string = prompt("Enter the name of your browser", "Browser");
+    
+    if(user_string == "Edge"){
+
+        alert("You've got the Edge!");
+        break;
+    }
+
+    else if(user_string == "chrome" || user_string == "opera" || user_string == "firefox" || user_string == "safari"){
+        alert("Okay we support these browsers too");
+        break
+    }
+
+    else{
+        alert("We hope this page looks okay on your browser");
+        break
+    }
+}
