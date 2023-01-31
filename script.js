@@ -404,14 +404,119 @@
 // greetings();
 // alert(message);
 
-let userName = "John";
+// let userName = "John";
 
-function showMessage(){
-    let userName = "Bob";
-    let message = "Hello " + userName;
-    alert(message);
+// function showMessage(){
+//     let userName = "Bob";
+//     let message = "Hello " + userName;
+//     alert(message);
+// }
+// alert(userName);
+// showMessage();
+// showMessage();
+// alert(userName);
+
+// function showMessage(from, text){
+//     alert(from + ":" + text);
+
+// }
+
+// showMessage("Dele", "How are you?");
+// showMessage("Samuel");
+// showMessage();
+
+// function showMessage(from, text = "no text given"){
+//     alert(from + ":" + text);
+// }
+
+// showMessage()
+
+
+// function showMessage(from,text = "no text given"){
+//     alert(from + " : " + text);
+// }
+
+// showMessage("Ann",);
+
+// //Alternative default parameters
+
+
+// function showMessage(from, text){
+//     alert(from + " : " + text);
+//     if(text === undefined){
+//         alert("no text given");
+//     }
+    
+// }
+
+// showMessage("Dele");
+
+// function addition(num_one, num_two){
+//     let sum = num_one + num_two;
+//     alert(sum);
+// }
+
+// addition(5,4);
+
+// function summation(num1, num2){
+//     return num1 + num2;
+// }
+
+//Program to add the sum of two numbers;
+
+// let total = summation(10, 10);
+
+// alert(total);
+
+// function checkAge(age){
+//     if(age >= 18){
+//         return true
+//     }
+//     else{
+//         return confirm("Do you have permission from your parents");
+//     }
+// }
+
+// let age = +prompt("How old are you", 18);
+
+// if(checkAge(age)){
+//     alert("Access granted");
+// }
+// else{
+//     alert("Access denied");
+// }
+
+
+// function showMovie(age){
+//     if(!checkAge(age)){
+//         return;
+//     }
+//     alert("Showing you the movie");
+// }
+
+// showMovie(age);
+
+
+function checkAge(){
+    let state = true;
+    while(state){
+        let age = +prompt("How old are you?", 18);
+        if(age > 18){
+            state = false;
+            return true;
+           
+        }else{
+            state = false;
+            return confirm("Did your parents allow you?");
+            
+            
+        }
+    }
+    
 }
-alert(userName);
-showMessage();
-showMessage();
-alert(userName);
+checkAge();
+
+
+// checkAge(14);
+// checkAge(18);
+// checkAge(24);
