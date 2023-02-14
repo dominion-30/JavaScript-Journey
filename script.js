@@ -582,20 +582,34 @@
 //         alert("The result is strange! Really");
 // }
 
-let ang = prompt("Enter a number", "number");
+// let ang = prompt("Enter a number", "number");
 
-switch(ang){
-    case "1":
-    case "0":
-        alert("One or Zero");
-        break;
+// switch(ang){
+//     case "1":
+//     case "0":
+//         alert("One or Zero");
+//         break;
 
-    case "2":
-        alert("Two");
-        break;
-    case 3:
-        alert("This never executes");
-        break;
-    default:
-        alert("An unknown number by this system");
+//     case "2":
+//         alert("Two");
+//         break;
+//     case 3:
+//         alert("This never executes");
+//         break;
+//     default:
+//         alert("An unknown number by this system");
+// }
+
+let browser = prompt("Enter the name of your favourite browser", "Favourite browser");
+
+if (browser == "Edge"){
+    alert("You've got the Edge!");
+}
+
+else if(browser == "Chrome" || browser == "Firefox" || browser == "Safari" || browser == "Opera"){
+    alert("Okay we support these browsers too");
+}
+
+else{
+    alert("We hope that this page looks ok!");
 }
