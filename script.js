@@ -497,26 +497,105 @@
 // showMovie(age);
 
 
-function checkAge(){
-    let state = true;
-    while(state){
-        let age = +prompt("How old are you?", 18);
-        if(age > 18){
-            state = false;
-            return true;
+// function checkAge(){
+//     let state = true;
+//     while(state){
+//         let age = +prompt("How old are you?", 18);
+//         if(age > 18){
+//             state = false;
+//             return true;
            
-        }else{
-            state = false;
-            return confirm("Did your parents allow you?");
+//         }else{
+//             state = false;
+//             return confirm("Did your parents allow you?");
             
             
-        }
-    }
+//         }
+//     }
     
+// }
+// checkAge();
+
+
+// function checkAge(age){
+//     return (age >= 18) || confirm("Did your parents allow you");
+
+
+// }
+
+// let result = checkAge(2);
+// alert(result);
+
+// function minimum_number(num1,num2){
+//     let answer = 0;
+//     if(num1 < num2 || num2 > num1){
+//         answer = num1 || num2;
+//     }
+    
+//     else{
+//         alert(`${num1} = ${num2}`);
+//     }
+//     return answer;
+// }
+
+// alert(minimum_number(30,20));
+
+
+// let a = +prompt("Enter a number", "number");
+// switch(a){
+//     case 3:
+//         alert("Too small");
+//         break;
+//     case 4:
+//         alert("Exactly");
+//     case 5:
+//         alert("Too big");
+    
+//     default:
+//         alert("I don't know such value");
+//         break;
+// }
+
+// let a = "1";
+// let b = 0;
+
+// switch(+a){
+//     case b + 1:
+//         alert("this runs because +a is 1, exactly equals b + 1");
+//         // break;
+//     default:
+//         alert("This doesn't run");
+// }
+
+// let a = +prompt("Enter a number", "number");
+
+// switch(a){
+//     case 4:
+//         alert("Right!");
+//         break;
+//     case 3:
+//     case 5:
+//         alert("Wrong!");
+//         alert("Why don't you take a math class");
+//         break;
+//     default:
+//         alert("The result is strange! Really");
+// }
+
+let ang = prompt("Enter a number", "number");
+
+switch(ang){
+    case "1":
+    case "0":
+        alert("One or Zero");
+        break;
+
+    case "2":
+        alert("Two");
+        break;
+    case 3:
+        alert("This never executes");
+        break;
+    default:
+        alert("An unknown number by this system");
 }
-checkAge();
-
-
-// checkAge(14);
-// checkAge(18);
-// checkAge(24);
