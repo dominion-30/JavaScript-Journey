@@ -614,19 +614,203 @@
 //     alert("We hope that this page looks ok!");
 // }
 
-let a = +prompt("Enter a number", "number");
+// let a = +prompt("Enter a number", "number");
 
-switch(a){
-    case 0:
-        alert(0);
-        break;
-    case 1:
-        alert(1);
-        break;
-    case 2:
-    case 3:
-        alert(`${2} or ${3}`);
-        break;
-    default:
-        alert("Number not in this system");
+// switch(a){
+//     case 0:
+//         alert(0);
+//         break;
+//     case 1:
+//         alert(1);
+//         break;
+//     case 2:
+//     case 3:
+//         alert(`${2} or ${3}`);
+//         break;
+//     default:
+//         alert("Number not in this system");
+// }
+
+// let a = 2 + 2;
+// Example of switch with break
+// let a;
+// a = +prompt("Enter a number","Number");
+
+// switch(a){
+//     case 3:
+//         alert("Too small");
+//         break;
+//     case 4:
+//         alert("Exactly");
+//         break;
+//     case 5:
+//         alert("Too big");
+//         break;
+//     default:
+//         alert("Number does not exist");
+// }
+
+//Example of switch without break
+
+// let a = 2 + 1;
+// switch(a){
+//     case 3:
+//         alert("Too Small");
+//     case 4:
+//         alert('Exactly');
+//     case 5:
+//         alert("Too Big");
+//     default:
+//         alert("Number does not exist");
+// }
+
+// let a = "1";
+// let b = 0;
+
+// switch(+a){
+//     case b + 1:
+//         alert("this runs, because +a is 1, exactly equals b + 1");
+//         break;
+//     default:
+//         alert("this doesn't run");
+// }
+
+// let user_browser = prompt("Enter the name of your favourite browser", "Favourite Browser");
+// if (user_browser == "Edge"){
+//     alert("You've got the Edge!");
+// }
+
+// else if(user_browser == "Chrome"|| user_browser == "Firefox" || user_browser == "Safari" || user_browser == "Opera"){
+//     alert("Okay we support these browsers too");
+// }
+
+// else{
+//     alert("We hope you find what you are looking for");
+// }
+
+
+// let a = +prompt("Enter number", "Number");
+
+// switch(a){
+//     case 0:{
+//         alert(0);
+//         break;
+//     }
+//     case 1:{
+//         alert(1);
+//         break;
+//     }
+
+//     case 2:
+//     case 3:
+//         alert(2);
+//         alert (3);
+//         break;
+//     default:
+//         alert(`${a}, not found in the range of numbers`);
+//         break;
+// }
+
+// function showMessage(){
+//     let message = "Hello, I'm JavaScript!";
+//     alert(message);
+// }
+
+// showMessage();
+// alert(message);
+
+// let userName = "John";
+// function showMessage(){
+
+//     let message = "Hello, " + userName;
+//     alert(userName);
+//     alert(message);
+
+// }
+
+// showMessage();
+
+// let userName = "John";
+
+// function showMessage(){
+//     let userName = "Bob";
+//     let message = "Hello, " + userName;
+
+//     alert(message);
+// }
+
+// alert(userName);
+// showMessage();
+
+// function showMessage(from, text){
+//     alert(from + ": " + text);
+// }
+
+// showMessage();
+
+//  function anotherFunction(){
+//     alert("The second parameter for this function was not provided that is why I am on your screen");
+//  }
+
+// function wordDisplay(from, text = anotherFunction()){
+//     alert(from + ": " + text);
+// }
+
+// wordDisplay("Ann ");
+
+
+// function sum(a,b){
+//     return a + b;
+// }
+// let result = sum( 25, 1);
+// alert(result);
+
+// function checkAge(age){
+//     if (age >=18){
+//         return true;
+//     }
+//     else
+//     {
+//         return confirm('Do you have permission to continue from your parents');
+//     }
+// }
+// let age = prompt("How old are you?", "Age");
+// if (checkAge(age)){
+//     alert("Access Granted");
+
+// }
+
+// else{
+//     alert("Access Denied");
+// }
+// // checkAge(25);
+// checkAge(2);
+// checkAge(18);
+// checkAge(11);
+
+// first version
+// function checkAge(age){
+//     if (age > 18){
+//         return true;
+//     }
+
+//     else{
+//         return confirm("Did your parents allow you?");
+//     }
+// }
+// let result = checkAge(12);
+// alert(result);
+
+
+//second version
+
+function checkAge(age){
+    if (age > 18){
+        return true;
+    }
+    return confirm("Did your parents allow you?");
 }
+
+let result = checkAge(1);
+alert(result);
+
