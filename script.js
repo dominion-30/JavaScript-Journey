@@ -804,13 +804,47 @@
 
 //second version
 
-function checkAge(age){
-    if (age > 18){
-        return true;
-    }
-    return confirm("Did your parents allow you?");
+// function checkAge(age){
+//     if (age > 18){
+//         return true;
+//     }
+//     return confirm("Did your parents allow you?");
+// }
+
+// let result = checkAge(1);
+// alert(result);
+
+// function checkAge(age){
+//     return (age >18) || confirm("Did your parents allow you?"); 
+// }
+
+// let result = checkAge(2);
+// alert(result);
+
+
+// function min(a,b){
+//     /*Program to find the minimum number between two number*/
+
+//     if (a > b){
+//         return `The minimum number between ${a} and ${b} is ${b}`;
+//     }
+//     else if(b > a){
+//         return `The minimum number between ${a} and ${b} is ${a}`;
+//     }
+//     else{
+//         return `Both numbers are equal, ${a} = ${b}`;
+//     }
+// }
+
+// let result = min(00,100);
+// alert(result);
+
+
+function pow(x,n){
+    /*The function return x raised to power n*/
+    
+    return x ** n;
+
 }
-
-let result = checkAge(1);
+let result = pow(2,3);
 alert(result);
-
