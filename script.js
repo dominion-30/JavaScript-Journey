@@ -1165,15 +1165,24 @@
 //     alert(`${clone.item}`);
 // }
 
-let user = {name:"John",};
+// let user = {name:"John",};
 
-let permission1 = {canView:true};
-let permission2 = {canEdit:true};
+// let permission1 = {canView:true};
+// let permission2 = {canEdit:true};
 
-Object.assign(user, permission1, permission2);
-for(let key in user){
+// Object.assign(user, permission1, permission2);
+// for(let key in user){
     
-    alert(`${key} = ${user[key]}`);
-}
+//     alert(`${key} = ${user[key]}`);
+// }
 
+
+let user = {name:"John", size:{height:187, weight:50,}};
+
+let clone = Object.assign({}, user);
+alert(user.size === clone.size);
+
+// alert(user.name);
+// alert(user.size.height);
+// alert(user.size.weight);
 
