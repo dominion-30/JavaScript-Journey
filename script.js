@@ -1142,16 +1142,16 @@
 
 // alert(a == b);
 
-let user ={name:'Ayobamidele', age:24, gender:"Male", height:185};
-let clone = {};
+// let user ={name:'Ayobamidele', age:24, gender:"Male", height:185};
+// let clone = {};
 
-for(let key in user){
-    clone.key = key;
-    alert(`${clone.key} = ${user[key]}`);
+// for(let key in user){
+//     clone.key = key;
+//     alert(`${clone.key} = ${user[key]}`);
     
 
 
-}
+// }
 
 // for(item in clone){
 //     alert(item);
@@ -1159,10 +1159,21 @@ for(let key in user){
 //     // alert(`${item} = ${clone[item]}`);
 // }
 
-clone.name = "Pete";
+// clone.name = "Pete";
 
 // for(item in clone){
 //     alert(`${clone.item}`);
 // }
+
+let user = {name:"John",};
+
+let permission1 = {canView:true};
+let permission2 = {canEdit:true};
+
+Object.assign(user, permission1, permission2);
+for(let key in user){
+    
+    alert(`${key} = ${user[key]}`);
+}
 
 
