@@ -840,11 +840,329 @@
 // alert(result);
 
 
-function pow(x,n){
-    /*The function return x raised to power n*/
+// function pow(x,n){
+//     /*The function return x raised to power n*/
     
-    return x ** n;
+//     return x ** n;
+
+// }
+// let result = pow(2,3);
+// alert(result);
+
+// function sayHi(){
+//     alert("Hello, how are you?");
+// }
+
+// sayHi();
+
+// let sayHi = function(){
+//     alert("Was she the one who said Hi");
+// };
+
+// sayHi();
+
+// function sayHi(){
+//     alert("Hello");
+// }
+
+// let func = sayHi();
+
+
+// sayHi();
+// func();
+
+
+// function sayHi(){
+//     alert("Hello");
+// }
+
+// let func = sayHi();
+// sayHi();
+// alert(func);
+
+
+// function ask(question = prompt("Did you take the pen that was on the table", "answer 'yes' or 'no'"), yes, no){
+     
+
+// if (question == "yes" || question == "Yes" || question == "YES"){
+//     alert("Yes, I took the pen");
+// }
+
+// else if(question == "no" || question == "No" || question == "NO"){
+//     alert("No, I did not take the pen");
+// }
+
+// }
+
+// ask("","");
+
+
+// function ask(question, yes, no){
+//     if (confirm(question)) yes()
+    
+//     else no();
+// }
+
+// function showOkay(){
+//     return ('You agreed');
+// }
+
+// function showCancel(){
+//     return ("You cancelled the execution");
+// }
+
+// ask("Do you agree?", showOkay(),showCancel());
+
+
+// let sum = (a, b) => a - b;
+
+// alert( sum(1,3) );
+
+// sum(1,2);
+
+// let double = (n) => n * 2;
+
+// alert(double(3));
+
+
+// let message = () => alert("Hello, Greetings");
+
+// message();
+
+
+// let showOkay = () => {
+//     alert("The user agreed");
+
+// };
+
+// showOkay();
+
+
+// function testing(){
+//     alert('The code is being tested');
+// }
+
+// debugger;
+
+// testing();
+
+
+// user = {name:"John", age:30};
+// // alert(typeof(user));
+
+// alert(user.name);
+// alert(user.age);
+
+// user.isAdmin = true;
+// user.gender = "Male";
+// user.nationality = "Nigerian";
+
+// alert(user.gender);
+// alert(user.nationality);
+
+// delete user.isAdmin;
+// delete user.age;
+
+// alert(user.name);
+// alert(user.age);
+// alert(user.gender);
+
+// let user = {'likes birds': "Studio", value :"code"};
+
+// delete user["likes birds"];
+// // alert(user['likes birds']);
+// alert(user.value);
+
+
+// let key = prompt('What is your name?', "name");
+
+// user.other = key;
+// alert(user.other);
+
+// let fruit = prompt("which fruit to buy?", "apple");
+
+// let bag = {
+//     [fruit]:5,
+// }
+
+// alert(bag.apple);
+
+
+// let fruit = prompt("Enter the name of a fruit", "fruit");
+// let item = {[fruit + "Computers"]:5,};
+
+// alert(item[apple + "Computers"]);
+
+// function makeUser(name, age){
+//     return {name:name, age:age,};
+// }
+
+// let user = makeUser('Ayobamidele', 24);
+// alert(user.name);
+// alert(user.age);
+
+
+// function makeUser(name, age){
+//     return {name, age: 35,};
+// }
+
+// let user = makeUser("Dele");
+
+// alert(user.name);
+// alert(user.age);
+
+
+// let obj = {for:1, let:3, return:3,};
+// alert(obj.for + obj.let + obj.return);
+
+
+// let user = {name:"John", age:30, gender:"Male"};
+
+// alert(user.name);
+// alert(user.age);
+// alert("gender" in user);
+// alert("house" in user);
+
+
+// let user = {name:'Ayobamidele', age:24, gender:"Male", "Mother Tongue":"Yoruba"};
+// let key;
+// for(key in user){
+//     alert(`${key} = ${user[key]}`);
+// }
+
+
+// let user = {name:"John", surname:"Smith"};
+// alert(`name = ${user.name}`);
+// alert(`surname = ${user.surname}`);
+// user.name = "Pete";
+// alert(user.name);
+// delete user.name
+// alert(user.name);
+
+
+// function isEmpty(obj){
+//     if(obj === null){
+//         return true;
+//     }
+//     else{
+//         false;
+//     }
+// }
+
+
+// let result = isEmpty(user);
+
+// alert(result);
+
+// let user = {name:1," ": 2};
+
+// alert(" " in user);
+
+
+// let employees = {John:100, James:200 ,Peter:300, Luke:400, Matthew:500,};
+// let sum = 0;
+// for(let person in employees){
+//     alert(`${person} is paid ${employees[person]} dollars`);
+//     sum = sum + employees[person];
+    
+    
+// }
+// alert(`The total salaries paid is ${sum} dollars`);
+// let obj = {name:1, age:2, gender:3, family:4};
+// function multiplyNumeric(obj){
+
+//     // let created_obj ={};
+
+//     let new_value;
+//     for(let key in obj){
+//        let new_valez = obj[key];
+        
+//         if( typeof(new_valez) == Number){
+//             new_valez = new_valez  * 2;
+//             // return new_value;
+//             alert(new_valez);
+
+//         }
+          
+        
+//         else{
+//             continue;
+//         }
+//     }
+
+// }
+// multiplyNumeric(obj);
+
+
+// let message = "Hello!";
+// let phrase =  message;
+// alert(message);
+// alert(phrase);
+
+// let user = {}let obj = {name:1, age:2, gender:3, family:4};
+// function multiplyNumeric(obj){
+
+//     // let created_obj ={};
+
+//     let new_value;
+//     for(let key in obj){
+//        let new_valez = obj[key];
+        
+//         if( typeof(new_valez) == Number){
+//             new_valez = new_valez  * 2;
+//             // return new_value;
+//             alert(new_valez);
+
+//         }
+          
+        
+//         else{
+//             continue;
+//         }
+//     }
+
+// }
+// multiplyNumeric(obj);
+
+
+// let user = {name:"John",}
+// let admin = user;
+
+// alert(user.name);
+// alert(admin.name);
+// admin.name = "Pete";
+
+// alert(admin.name);
+// alert(user.name);
+
+// alert(user == admin);
+
+// let a = {};
+// let b = {};
+
+// alert(a == b);
+
+let user ={name:'Ayobamidele', age:24, gender:"Male", height:185};
+let clone = {};
+
+for(let key in user){
+    clone.key = key;
+    alert(`${clone.key} = ${user[key]}`);
+    
+
 
 }
-let result = pow(2,3);
-alert(result);
+
+// for(item in clone){
+//     alert(item);
+//     alert(clone[item]);
+//     // alert(`${item} = ${clone[item]}`);
+// }
+
+clone.name = "Pete";
+
+// for(item in clone){
+//     alert(`${clone.item}`);
+// }
+
+
