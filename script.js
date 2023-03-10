@@ -1177,12 +1177,91 @@
 // }
 
 
-let user = {name:"John", size:{height:187, weight:50,}};
+// let user = {name:"John", size:{height:187, weight:50,}};
 
-let clone = Object.assign({}, user);
-alert(user.size === clone.size);
+// let clone = Object.assign({}, user);
+// alert(user.size === clone.size);
 
 // alert(user.name);
 // alert(user.size.height);
 // alert(user.size.weight);
 
+// let user = {name:"John", age:30,};
+
+// user.sayHi = function(){
+//     alert("Hello");
+// }
+
+
+// user.sayHi();
+
+// let user = {name:"John",age:30};
+// function sayHi(){
+//     alert("Hello!");
+// }
+// let result;
+
+// result = user.sayHi = sayHi;
+// user.sayHi();
+
+
+// let user = {sayHi: function(){
+//     alert("Hello");
+// }}
+
+// user.sayHi();
+
+// let user = {name:"Peter", age:20};
+// function sayHi(){
+//     alert(this.name);
+// }
+
+// user.sayHi();
+
+
+//Calculator App
+
+/*Program that sum the values and multiplies saved values*/
+
+
+
+
+function calculator_sum(obj){
+    let sum = 0;
+    for(let key in obj){
+        sum = sum + obj[key];
+
+    }
+    return sum;
+}
+
+function calculator_mul(obj){
+    let mul = 1;
+    for (let key in obj){
+        mul = mul * obj[key];
+    }
+    return mul;
+}
+function number(){
+    let count = 0
+    num_obj ={};
+    while(count<= 2){
+
+        let user_num = +prompt("Enter a value", "Value");
+        count = obj[user_num];
+        count = count + 1; 
+    }
+    for(let key in num_obj){
+        alert(key);
+    }
+
+}
+
+// num_obj = {first:3, second:2};
+// let result = calculator_sum(num_obj);
+// alert(result);
+
+// let answer = calculator_mul(num_obj);
+// alert(answer);
+
+function number();
