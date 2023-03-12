@@ -1226,42 +1226,127 @@
 
 
 
-function calculator_sum(obj){
-    let sum = 0;
-    for(let key in obj){
-        sum = sum + obj[key];
+// function calculator_sum(obj){
+//     let sum = 0;
+//     for(let key in obj){
+//         sum = sum + obj[key];
 
-    }
-    return sum;
+//     }
+//     return sum;
+// }
+
+// function calculator_mul(obj){
+//     let mul = 1;
+//     for (let key in obj){
+//         mul = mul * obj[key];
+//     }
+//     return mul;
+// }
+// function number(){
+//     let counter = 0;
+//     let num = 1;
+//     let num_obj ={};
+//     while(counter< 2){
+
+//         let user_num = +prompt("Enter a value", "Value");
+//         num = num_obj[user_num];
+//         count = count + 1; 
+//     }
+//     for(let key in num_obj){
+//         alert(key);
+//     }
+
+// }
+
+// // num_obj = {first:3, second:2};
+// // let result = calculator_sum(num_obj);
+// // alert(result);
+
+// // let answer = calculator_mul(num_obj);
+// // alert(answer);
+
+// function number();
+
+
+// let user = {name:"John", age:30};
+
+// user.sayHi = function(){
+//     alert("Hello!");
+// }
+
+// user.sayHi();
+
+
+
+// let user = {name:"Samuel",};
+// function sayHi(){
+//     alert("Hello!");
+
+// }
+
+// user.sayHi = sayHi;
+
+// user.sayHi();
+
+// let user = {sayHi: function(){
+//     alert("Hello!");
+// }};
+
+// user.sayHi();
+
+
+
+// let user = {name:"Anthony", age:50,
+
+// sayHi(){
+//     alert(this.name);
+// }};
+
+
+// user.sayHi();
+
+
+// let user = {name:"Dele",age:25,
+
+// sayHi(){
+//     alert(user.name);
+// }
+// };
+
+// user.sayHi();
+// let admin = user;
+// user = null;
+// user.sayHi();
+
+
+// function User(name){
+//     this.name = name;
+//     this.isAdmin = false;
+// }
+
+// let user = new User("Jack");
+
+// alert(user.name);
+// alert(user.isAdmin);
+
+
+//Country
+
+function Country(name,continent,source_of_income){
+    this.name = name;
+    this.continent = continent;
+    this.source_of_income = source_of_income;
 }
 
-function calculator_mul(obj){
-    let mul = 1;
-    for (let key in obj){
-        mul = mul * obj[key];
-    }
-    return mul;
+let first_country = new Country('Nigeria', "Africa", "Crude Oil");
+
+// alert(first_country.name);
+// alert(typeof(first_country));
+// alert(typeof(first_country.name));
+
+let second_country = new Country("United States of America","North America", "Technology");
+let third_country = new Country('Mali', "Africa", "Mineral Resources");
+
+for(key in first_country){
+    alert(`${key} = ${first_country[key]}`);
 }
-function number(){
-    let count = 0
-    num_obj ={};
-    while(count<= 2){
-
-        let user_num = +prompt("Enter a value", "Value");
-        count = obj[user_num];
-        count = count + 1; 
-    }
-    for(let key in num_obj){
-        alert(key);
-    }
-
-}
-
-// num_obj = {first:3, second:2};
-// let result = calculator_sum(num_obj);
-// alert(result);
-
-// let answer = calculator_mul(num_obj);
-// alert(answer);
-
-function number();
