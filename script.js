@@ -1332,21 +1332,69 @@
 
 //Country
 
-function Country(name,continent,source_of_income){
-    this.name = name;
-    this.continent = continent;
-    this.source_of_income = source_of_income;
-}
+// function Country(name,continent,source_of_income){
+//     this.name = name;
+//     this.continent = continent;
+//     this.source_of_income = source_of_income;
+// }
 
-let first_country = new Country('Nigeria', "Africa", "Crude Oil");
+// let first_country = new Country('Nigeria', "Africa", "Crude Oil");
 
-// alert(first_country.name);
-// alert(typeof(first_country));
-// alert(typeof(first_country.name));
+// // alert(first_country.name);
+// // alert(typeof(first_country));
+// // alert(typeof(first_country.name));
 
-let second_country = new Country("United States of America","North America", "Technology");
-let third_country = new Country('Mali', "Africa", "Mineral Resources");
+// // let second_country = new Country("United States of America","North America", "Technology");
+// // let third_country = new Country('Mali', "Africa", "Mineral Resources");
 
-for(key in first_country){
-    alert(`${key} = ${first_country[key]}`);
-}
+// // for(key in first_country){
+// //     alert(`${key} = ${first_country[key]}`);
+// // }
+
+// function talk(name){
+//     this.name = name;
+//     alert("Hello!");
+// }
+
+// let A = {name:"A",};
+// let B = {name:"B",};
+
+// A.talk();
+
+
+// class User{
+
+//     constructor(name,age,gender){
+//         this.name = name;
+//         this.age = age;
+//         this.gender = gender;
+//     }
+
+//     talk(){
+//         alert(this.name);
+//         alert(this.age);
+//         alert(this.gender);
+//     }
+// }
+
+// let person  = new User("John", 24, "Male");
+// let second_person = new User("Victoria","21","Female");
+
+// person.talk();
+// second_person.talk();
+
+// alert(typeof User);
+
+
+// class Time{
+//     constructor(time)
+//     {
+//         this.time = time;
+//     }
+
+//     tell(){
+//         alert(this.time);
+//     }
+// }
+// let clock_tick = new Time("10");
+// clock_tick();
