@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <script src="script.js"></script>
     <title>JavaScript Learning</title>
 </head>
@@ -32,7 +33,9 @@
     document.getElementById("demo").innerHTML = "The first paragraph with index 0 and class intro is: " + x[0].innerHTML;
 
 </script> -->
+<h1 id="colorChange">This is part of my JavaScript Journey</h1>
 
+<h2 onclick="this.innerHTML = 'Ooops'">Click on Me</h2>
 <form id = "frm1" action="index.html">
     First Name : <input type="text" name="fname" value="Donald"><br>
     Last Name : <input type="text" name="lname" value="Duke"><br>
@@ -46,15 +49,54 @@
 
 <p id="intro"></p>
 
-<script>
-    const x = document.forms["frm1"];
-    let text = "";
-    let i = 0;
+<img id="myimage" src="images/image1.jpg" alt="">
 
-    for(i; i< x.length ; i++){
-        text += x.elements[i].value + "<br>";
-    }
-    document.getElementById("demo").innerHTML = text;
+<p id="date"></p>
+<form id="form" action="index.html">
+    Firstname:<input type="text" name="fname" >
+    Lastname: <input type="text" name="lname">
+    <input type="Submit" value="submit">
+</form>
+
+<p id="myline">You basically don't need to remember every single line of code</p>
+
+<button type="button" onclick="document.getElementById('colorChange').style.color = 'green'">
+
+</button>
+
+<button id="box" class="container" type="button" onmouseover="document.getElementById('box').innerHTML = 'Thank you'">Mouse Over Me</button>
+
+
+ 
+<script>
+    document.getElementById("box").style.backgroundColor = "green";
+    document.getElementById("myimage").src = "images/property1.jpg";
+    // document.getElementById("intro").innerHTML = "Who are you and why are you here";
+    // // const x = document.forms["frm1"];
+    // // let text = "";
+    // // let i = 0;
+
+    // // for(i; i< x.length ; i++){
+    // //     text += x.elements[i].value + "<br>";
+    // // }
+    // // document.getElementById("demo").innerHTML = text;
+        document.getElementById("date").innerHTML = "Date: " + Date();
+        document.write("Who are you and what did you do?")
+
+        function validateForm(){
+
+            let x = document.forms["form"]["fname"].value;
+            if(x == ""){
+                alert("Name must be filled");
+                return false;
+            }
+
+        }
+
+    document.getElementById("myline").style.color = "red";
+
+    
+  
 </script>
 </body>
 </html>
