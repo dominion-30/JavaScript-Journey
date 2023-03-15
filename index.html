@@ -8,21 +8,53 @@
     <title>JavaScript Learning</title>
 </head>
 <body>
-    <h1>JavaScript Learning</h1>
+    <!-- <h1>JavaScript Learning</h1>
 
     <p>I am current working on knowing the language more. This page has a script linked to it. If you want to run the script again, just refresh the page</p>
-    <p id="demo"></p>
-<!-- 
-    <p id="demo">What is your name</p>
-    <img src="images/property1.jpg" alt="image of a swimming pool" id="image">
+    <p id="intro">Finding HTML Elements by Id</p>
+    <p>This example demonstrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p> -->
+    <!-- <main id="main">
+        <p class="intro">I am currently working on knowing the JavaScript language more</p>
+        <p class="intro">Yes much time and resources have been put into learning the language</p>
+        <p id="demo"></p>
+        <p>This is an example</p>
+        <p>Dance, Dance, Dance</p>
+    </main>
+    
+-->
+<!-- <p class="intro">This is an element for testing HTML element CSS Selector</p>
+<p>This is a paragraph</p>
+<p id="demo"></p>
 
-    <script>
-      document.getElementById('demo').innerHTML = "Hello World!";
-    </script>
-    <script>document.getElementById("image").src = "images/image1.jpg"</script> -->
-    <script>document.getElementById("demo").innerHTML = "Date : " + Date();</script>
+<script>
+    const x = document.querySelectorAll("p.intro");
+    document.getElementById("demo").innerHTML = "The first paragraph with index 0 and class intro is: " + x[0].innerHTML;
 
-    <script>document.write("This is a new dawn")</script>
+</script> -->
 
+<form id = "frm1" action="index.html">
+    First Name : <input type="text" name="fname" value="Donald"><br>
+    Last Name : <input type="text" name="lname" value="Duke"><br>
+
+    <input type="submit" value="submit">
+
+</form>
+
+<p>These are the values for the form:</p>
+<p id="demo"></p>
+
+<p id="intro"></p>
+
+<script>
+    const x = document.forms["frm1"];
+    let text = "";
+    let i = 0;
+
+    for(i; i< x.length ; i++){
+        text += x.elements[i].value + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
 </body>
 </html>
