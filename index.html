@@ -8,7 +8,7 @@
     <script src="script.js"></script>
     <title>JavaScript Learning</title>
 </head>
-<body>
+<body onload="checkCookies">
     <!-- <h1>JavaScript Learning</h1>
 
     <p>I am current working on knowing the language more. This page has a script linked to it. If you want to run the script again, just refresh the page</p>
@@ -36,6 +36,11 @@
 <h1 id="colorChange">This is part of my JavaScript Journey</h1>
 
 <h2 onclick="this.innerHTML = 'Ooops'">Click on Me</h2>
+<!-- <p id="today_date"></p>
+
+<button onclick="document.getElementById('today_date').innerHTML = Date()">Try it</button> -->
+
+<button id="mydate" onclick="displayDate()">Try it</button>
 <form id = "frm1" action="index.html">
     First Name : <input type="text" name="fname" value="Donald"><br>
     Last Name : <input type="text" name="lname" value="Duke"><br>
@@ -94,6 +99,9 @@
         }
 
     document.getElementById("myline").style.color = "red";
+
+
+    document.getElementById("mydate").onclick = displayDate;
 
     
   
