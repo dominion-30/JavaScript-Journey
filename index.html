@@ -81,12 +81,47 @@
  <p id="demo"></p> -->
 
  <!-- <button id="btn">Click Here</button> -->
- <p id="demo"></p>
-
+ <!-- <button id="btn">Click Me</button>
+ <p id="demo"></p> -->
+<button onclick="geolocation()">Click Here</button>
+<p id="demo"></p>
 <script>
-    window.addEventListener("resize", function(){
-        document.getElementById("demo").innerHTML = Math.random();
-    });
+    const x = document.getElementById("demo");
+    function geolocation(){
+        try{
+            navigator.geolocation.getCurrentPosition(showPosition);
+
+        }
+        catch{
+            x.innerHTML = err;
+        }
+    }
+
+    function showPosition(position){
+        x.innerHTML = "Latitude: " + position.coords.latitude
++ "<br> Longitude: " + position.coords.longitude;    }
+    // function getLocation(){
+    //     if (navigator.geolocation){
+    //         navigator.geolocation.getCurrentPosition(showPosition);
+    //     }
+    //     else{
+    //         myElement.innerHTML = "Geolocation is not supported by the browser";
+
+    //     }
+    // }
+
+    // function showPosition(position){
+    //     myElement.innerHTML = "Latitude: " + position.coords.latitude + 
+    //     "<br> Longitude: " + position.coords.longitude;
+    // }
+    // document.getElementById("btn").addEventListener("click",Message);
+    // document.getElementById("btn").removeEventListener("click", Message);
+    // function Message(){
+    //     alert("Hello");
+    // }
+    // window.addEventListener("resize", function(){
+    //     document.getElementById("demo").innerHTML = Math.random();
+    // });
     // document.getElementById("btn").addEventListener('click', showMessage);
     // document.getElementById('btn').addEventListener("mouseover", showMessage);
 
