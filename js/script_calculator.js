@@ -27,19 +27,33 @@ function inputValue(){
     // document.getElementById("demo").innerHTML = value;
 }
 
-function onClick(elem){
-    let parent = elem.parentNode;
-
-    let val = parent
-    .querySelector("input[type=text]")
-    .value;
-
-    if(val == ""){
-        alert("No Value");
+function onClick(elem) {
+    var parent = elem.parentNode;
+    
+    var val = parent
+      val.querySelector('input[type=text]')
+      val.value;
+    if (val == '') {
+      console.log('no input');
+    } else {
+      console.log(val);
     }
+  }
 
-    else{
-        alert(val);
-    }
 
-}
+// function onClick(elem){
+//     let parent = elem.parentNode;
+
+//     let val = parent
+//     .querySelector("input[type=text]")
+//     .value;
+
+//     if(val == ""){
+//         console.log("No Value");
+//     }
+
+//     else{
+//         console.log(val);
+//     }
+
+// }
