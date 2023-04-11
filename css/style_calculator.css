@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+
+}
+
+.calculator{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 40%;
+
+}
+
+.calculator input{
+    margin: 1em;
+    width: 85%;
+    padding: 0.5em;
+}
+
+/* .calculatorKeys{
+    
+} */
+
+.calculatorKeys button{
+    width:30%;
+    padding: 1em;
+    margin: 1px;
+}
