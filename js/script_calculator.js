@@ -21,3 +21,25 @@ function division(num1, num2){
         let result = num1 / num2; 
     }
 }
+
+function inputValue(){
+    let value = document.getElementById("inputValue").value;
+    // document.getElementById("demo").innerHTML = value;
+}
+
+function onClick(elem){
+    let parent = elem.parentNode;
+
+    let val = parent
+    .querySelector("input[type=text]")
+    .value;
+
+    if(val == ""){
+        alert("No Value");
+    }
+
+    else{
+        alert(val);
+    }
+
+}
